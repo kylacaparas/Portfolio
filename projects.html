@@ -75,7 +75,56 @@
     </div>
 
 </nav>
+<!-- Demo Warning Modal -->
+<div class="modal fade" id="demoWarningModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
 
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fa fa-exclamation-triangle text-warning"></i>
+                    Confidential Project
+                </h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                    This project was developed exclusively for our client institution
+                    and contains confidential information.
+                </p>
+
+                <p class="mb-0">
+                    Please <strong>request permission first</strong> before viewing the
+                    demonstration video. Access is provided only to authorized viewers.
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <a href="https://drive.google.com/file/d/1-W9P0e76Ese2aNyQEBG6BUvMFz3DyqFp/preview"
+                   target="_blank"
+                   class="btn btn-primary">
+
+                    Continue
+
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 <!--================ PROJECTS ================-->
 
 <section id="projects">
@@ -170,14 +219,14 @@
 </ul>
     <div class="mt-4">
 
-        <a href="https://drive.google.com/file/d/1-W9P0e76Ese2aNyQEBG6BUvMFz3DyqFp/preview"
-   class="btn btn-primary"
-   target="_blank">
+    <button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#demoWarningModal">
 
     <i class="fa fa-play-circle"></i>
     Watch Demo
 
-</a>
+</button>
 
 
         <button class="btn btn-outline-secondary" disabled>
@@ -191,6 +240,7 @@
     </div>
 
 </div>
+
 
             </div>
 
