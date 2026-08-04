@@ -70,7 +70,56 @@
     </div>
 
 </nav>
+<!-- Video Warning Modal -->
+<div class="modal fade" id="videoWarningModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
 
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fa fa-exclamation-triangle text-warning"></i>
+                    Confidential Video
+                </h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                    This promotional video was created exclusively for our client institution
+                    and may contain confidential or proprietary information.
+                </p>
+
+                <p class="mb-0">
+                    <strong>Please request permission before viewing this video.</strong>
+                    Access is intended only for authorized viewers.
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <a href="https://drive.google.com/file/d/1xp04xwWDVqiCXcM3QnqBkUBK5dXrSEEB/preview"
+                   target="_blank"
+                   class="btn btn-primary">
+
+                    Continue
+
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 <!--================ VIDEO EDITING ================-->
 
 <section id="video">
@@ -144,15 +193,14 @@
                 cinematic shots, and engaging visual storytelling.
             </p>
 
-            <a href="https://drive.google.com/file/d/1xp04xwWDVqiCXcM3QnqBkUBK5dXrSEEB/preview"
-            class="btn btn-primary"
-            target="_blank">
+          <button class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#videoWarningModal">
 
-                <i class="fa fa-play"></i>
+    <i class="fa fa-play"></i>
+    Watch Video
 
-                Watch Video
-
-            </a>
+</button>
 
         </div>
 
